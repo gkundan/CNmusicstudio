@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(12, 16, 39);
+  background-position: center;
+  background-attachment: fixed;
+  list-style: none;
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  overflow: hidden;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+/* #main header */
+nav {
+  height: 2.8rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(235, 227, 227);
+}
+nav ul li {
+  list-style: none;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h4 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.logo img {
+  height: 3rem;
+  z-index: 1;
+  margin: 1rem;
+}
+
+/* ## hordingDiv  ## */
+.card {
+  width: fit-content;
+  background: none;
+}
+
+.card img {
+  height: 250px;
+  width: 250px;
+}
+.card-body button {
+  height: 45px;
+  width: 120px;
+  background: #5c169d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+.card a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 20px;
+}
+/* //// ### MAin COntainer ///  */
+#main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  background: rgb(12, 16, 39);
+}
+.hording-div {
+  width: 50%;
+}
+.carousel {
+  /* border: 1px solid #ffff; */
+  background: #141b41;
+  color: #b2b7c3;
+  height: 50vh;
+}
+
+#list-example ul {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#list-example ul li {
+  height: 4rem;
+  list-style: none;
+  background-color: aquamarine;
+  margin: 8px 0px 0px -35px;
+  /* margin-left: -2rem; */
+}
+/* ### List Items  */
+.list-boxes {
+  box-shadow: inset 1px 2px #000;
+  background: #1a1e33;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.box-image {
+  display: inline-flex;
+  text-align: center;
+}
+.box-image img {
+  height: 3rem;
+  width: 3rem;
+}
+.box-icons {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.box-icons p {
+  margin: 10px;
+}
+/*
+ *  STYLE the scroll bar..
+ */
+
+#list-example ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+#list-example ul::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* #list-example ul::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    color-stop(0.5, rgba(255, 255, 255, 0.2)),
+    color-stop(0.5, transparent),
+    to(transparent)
+  );
+} */
+
+/* # aside div  */
+
+.aside-div {
+  height: 80vh;
+  width: 30%;
+  background: #0c1027;
+  border: 1px solid #141b41;
+}
+.aside-boxes {
+  color: #fff;
+}
+.box-items {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.box-items img {
+  height: 4rem;
+  width: 4rem;
+  margin: 0;
+}
+
+/* ////#### Aside List   */
+.aside-lists ul li {
+  height: 40px;
+  width: 100%;
+  list-style: none;
+  background-color: #b2b7c3;
+  margin: 4px 0px 4px -20px;
+}
+.aside-box-items {
+  display: flex;
+  justify-content: space-between;
+}
+.aside-lists img {
+  height: 2rem;
+  margin: 0%;
+}
+
+/* ### footer  */
+footer {
+  height: 5rem;
+  width: 100%;
+  background-color: #b2b7c3;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer img {
+  height: 4rem;
+  width: 4rem;
+}
+.audio-bar {
+}

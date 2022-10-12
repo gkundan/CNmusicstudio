@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <!-- ###nav section  -->
+    <header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="logo">
+                            <img src="./images/ninja.png" alt="ninjaLogo...">
+                            <h4>Ninja Studio</h4>
+                        </div>
+
+                    </li>
+                    <li>Favorite</li>
+                    <li>
+                        <input type="text" placeholder="Search Here">
+                    </li>
+                    <li>Notification</li>
+                    <li>Profile Pic</li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- ### Main Side #### -->
+    <main>
+        <!-- #### Carousels div  -->
+        <section id="main-container">
+            <div class="hording-div">
+                <!-- ### Carousels -->
+                <div id="carouselExampleFade Main-Carousel" class="carousel slide carousel-fade"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mb-3" style="max-width: 640px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/Sidhu.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sidhu MooseWala.</h5 class=""> <span>5000
+                                                Followers</span>
+                                            <h6>Punjabi Singer</h6>
+                                            <p class="card-text">Shubhdeep Singh Sidhu, better known by his stage name
+                                                Sidhu Moose Wala, was an Indian singer, rapper, songwriter and actor
+                                                associated with Punjabi music and Punjabi cinema. Sidhu rose to the
+                                                mainstream with his track "So High".</p>
+                                            <div class="corousel-buttuns">
+                                                <button>PLay All</button> <a href="#">Follow</a>
+                                            </div>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="card mb-3" style="max-width: 640px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/DjKhaled.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dj Khaled</h5>
+                                            <span>500
+                                                Followers</span>
+                                            <p class="card-text">Khaled Mohammed Khaled, known professionally as DJ
+                                                Khaled, is an American DJ, record executive, author and record producer.
+                                                Khaled first gained recognition as a radio host in the 1990s on the
+                                                radio station 99 Jamz, and translated his popularity by working with
+                                                Terror Squad as a DJ for their live performances.</p>
+                                            <div class="corousel-buttuns">
+                                                <button>PLay All</button>
+                                                <a href="#">Follow</a>
+                                            </div>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3" style="max-width: 640px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/tyler.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Taylor Swift 3</h5>
+                                            <span>1000
+                                                Followers</span>
+                                            <p class="card-text">Taylor Alison Swift is an American singer-songwriter.
+                                                Her discography spans genres and her narrative songwriting—often
+                                                inspired by her personal life—has received critical praise and
+                                                widespread media coverage.</p>
+                                            <div class="corousel-buttuns">
+                                                <button>PLay All</button>
+                                                <a href="#">Follow</a>
+                                            </div>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- #### Second Div  -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="list-example">
+                                <ul>
+                                    <li>
+                                        <div class="list-boxes">
+                                            <div class="box-image">
+                                                <p class="m-3">1</p>
+                                                <img class="m-2" src="./images/DjKhaled.jpg" alt="">
+
+                                                <p class="mt-2">SOngs NAme <br> <span>SInger</span></p>
+
+                                            </div>
+                                            <div class="box-icons m-3">
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-heart"></i></span>
+                                                </p>
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-plus"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-boxes">
+                                            <div class="box-image">
+                                                <p class="m-3">1</p>
+                                                <img class="m-2" src="./images/DjKhaled.jpg" alt="">
+
+                                                <p class="mt-2">SOngs NAme <br> <span>SInger</span></p>
+
+                                            </div>
+                                            <div class="box-icons m-3">
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-heart"></i></span>
+                                                </p>
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-plus"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-boxes">
+                                            <div class="box-image">
+                                                <p class="m-3">1</p>
+                                                <img class="m-2" src="./images/DjKhaled.jpg" alt="">
+
+                                                <p class="mt-2">SOngs NAme <br> <span>SInger</span></p>
+
+                                            </div>
+                                            <div class="box-icons m-3">
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-heart"></i></span>
+                                                </p>
+                                                <p>
+                                                    <span><i class="fa fa-regular fa-plus"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- ### Carousels ends -->
+            </div>
+
+            <div class="aside-div">
+                <div class="aside-boxes">
+                    <div class="box-items">
+                        <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                        <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                        <div class="box-icons ">
+                            <p>
+                                <span><i class="fa fa-regular fa-heart"></i></span>
+                            </p>
+                            <p>
+                                <span><i class="fa fa-regular fa-plus"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-boxes">
+                    <div class="box-items">
+                        <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                        <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                        <div class="box-icons ">
+                            <p>
+                                <span><i class="fa fa-regular fa-heart"></i></span>
+                            </p>
+                            <p>
+                                <span><i class="fa fa-regular fa-plus"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-boxes">
+                    <div class="box-items">
+                        <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                        <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                        <div class="box-icons ">
+                            <p>
+                                <span><i class="fa fa-regular fa-heart"></i></span>
+                            </p>
+                            <p>
+                                <span><i class="fa fa-regular fa-plus"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aside-list">
+                    <h3>Recent Play</h3>
+                    <div class="aside-lists">
+                        <ul>
+                            <li>
+                                <div class="aside-box-items">
+                                    <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                                    <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                                    <div class="box-icons ">
+                                        <p>
+                                            <span><i class="fa fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fa fa-regular fa-plus"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aside-box-items">
+                                    <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                                    <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                                    <div class="box-icons ">
+                                        <p>
+                                            <span><i class="fa fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fa fa-regular fa-plus"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aside-box-items">
+                                    <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                                    <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                                    <div class="box-icons ">
+                                        <p>
+                                            <span><i class="fa fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fa fa-regular fa-plus"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aside-box-items">
+                                    <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                                    <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                                    <div class="box-icons ">
+                                        <p>
+                                            <span><i class="fa fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fa fa-regular fa-plus"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aside-box-items">
+                                    <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                                    <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                                    <div class="box-icons ">
+                                        <p>
+                                            <span><i class="fa fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <p>
+                                            <span><i class="fa fa-regular fa-plus"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <div class="aside-box-items">
+                <img src="./images/Sidhu.jpg" class="img-thumbnial" alt="">
+                <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+                <div class="box-icons ">
+                    <p>
+                        <span><i class="fa fa-regular fa-heart"></i></span>
+                    </p>
+                    <p>
+                        <span><i class="fa fa-regular fa-plus"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="auido-bar">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+            </audio>
+
+        </div>
+        <div class="aside-box-items">   <p class="">SOngs NAme <br> <span>SInger</span></p>
+
+            <div class="box-icons ">
+                <p>
+                    <span><i class="fa fa-regular fa-heart"></i></span>
+                </p>
+                <p>
+                    <span><i class="fa fa-regular fa-plus"></i></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
